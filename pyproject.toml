@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-drf-app-example"
+version = "0.1.0"
+description = "Example of django drf project"
+authors = ["Felipe Colen <felipecolen@gmail.com>"]
+license = "GPL"
+readme = "README.md"
+packages = [{include = "django_drf_app_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
